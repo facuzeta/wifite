@@ -1058,7 +1058,7 @@ class RunEngine:
 
         command = ['airodump-ng',
                    '-a',  # only show associated clients
-                   '--write-interval', '1', # Write every second
+                 #  '--write-interval', '1', # Write every second   . TODO: my aircrack does not support this 
                    '-w', self.RUN_CONFIG.temp + 'wifite']  # output file
         if channel != 0:
             command.append('-c')
